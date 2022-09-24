@@ -23,6 +23,7 @@ body {
     font-size: 1.6rem;
     line-height: 2;
     margin: 0; 
+    background-color: #f1f1f1;
 }
 
 
@@ -457,3 +458,39 @@ svg{
     
 }
 
+
+/* apartado productos */
+
+
+.elementos{
+  
+    
+    padding: 2rem;
+
+    
+
+
+}
+
+.card{
+    width: 25rem;
+    height: auto;
+    background-color: #ffffff;
+    line-height: 0.8;
+    margin: auto;
+    margin-bottom: 3rem ;
+    border-radius: 2rem;
+}
+
+.boton--comprar{
+    border-radius: 0.5;
+}
+
+
+@media (min-width: 700px) {
+    .listado{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+}
