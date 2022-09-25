@@ -4,7 +4,7 @@
     --fuenteHeading: 'Fira Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
 
-    --primario: #37a7af;
+    --primario: #3AAFA9;
     --gris: #e1e1e1;
     --blanco: #ffffff;
     --negro: #000000;
@@ -219,6 +219,9 @@ img {
     background-color: var(--blanco);
     width: 90%;
     margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 40px -11px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 0px 40px -11px rgba(0,0,0,0.57);
+    box-shadow: 0px 0px 40px -11px rgba(0,0,0,0.57);
              
 }
 .contactos__logo {
@@ -315,7 +318,10 @@ img {
     text-align: center;
     padding: 3rem;
     border-radius: 2rem;
-    
+   
+}
+::placeholder{
+    font-size: 1.7rem;
 }
 
     @media (min-width: 368px) {
@@ -332,6 +338,7 @@ img {
             text-align: center;
             padding: 4rem;
             border-radius: 2rem;
+          
         }
         
     }
@@ -346,6 +353,7 @@ img {
 .boton--login{
     margin-top: 1rem;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 
@@ -368,20 +376,36 @@ img {
 
 
 /* Nosotros */
-
+.titulo--contactos {
+    text-transform: uppercase 3;
+}
 .nosotros {
     display: grid;
     margin: 0 auto;
-    column-gap: 3rem;
+    column-gap: 2rem;
+    padding-right: 1rem;
+    background-color: #DEF2F1;
+    
+
+    
 }
+
 @media (min-width: 768px) {
     .nosotros{
     grid-template-columns: 1fr 1fr;
     width: 60%;
+    height: auto;
+    -webkit-box-shadow: 0px 0px 40px -11px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 0px 40px -11px rgba(0,0,0,0.57);
+    box-shadow: 0px 0px 40px -11px rgba(0,0,0,0.57);
     }
     
 }
-
+.nosotros--informacion{
+    text-align:center;
+    margin: auto auto;
+    
+}
 
 /* Aside */
 
@@ -408,11 +432,16 @@ img {
  }
 
  .footer__parrafo{
-    border-top:1.6px solid rgb(255, 255, 255);
+   
    
     
  }
-
+ hr {
+    width: auto;
+    height: 1px;
+    background-color: red;
+  }
+  
 @media (min-width: 700px) {
     .footer{
         display: grid;
@@ -422,7 +451,7 @@ img {
     
     }
     .footer__parrafo{
-        border-top:1.6px solid var(--blanco);
+       
         margin-top: 4rem;
         grid-column: -4 /-1; 
         max-width: max-content; 
@@ -480,11 +509,25 @@ svg{
     margin: auto;
     margin-bottom: 3rem ;
     border-radius: 2rem;
+    
 }
 
+.card--descripcion{
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+.card--titulo{
+    font-weight: bold ;
+}
 .boton--comprar{
     border-radius: 0.5;
 }
+
+.card--precio{
+    font-weight: bold ;
+
+}
+
 
 
 @media (min-width: 700px) {

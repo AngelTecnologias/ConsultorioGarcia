@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +16,7 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     
+
 
 
     <title>Document</title>
@@ -54,7 +57,7 @@
         
 
         <section>
-            <div>
+            <div >
                 <h2>Titulo 1</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, fugiat, architecto non distinctio illum dolorem possimus voluptate aliquam itaque laborum laudantium iste ipsam obcaecati iure vel, cumque dicta doloremque velit.</p>
 
@@ -74,7 +77,7 @@
 
         
         <section>
-            <div>
+            <div class="wow animate__animated animate__bounceInUp">
                 <h2>Titulo 3</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam provident harum odio distinctio, voluptates laudantium laborum asperiores ullam, esse accusantium sapiente quia! Eos neque, quo molestiae sequi voluptatibus itaque necessitatibus.</p>
             </div>
@@ -137,6 +140,9 @@
                 <p>Asesorias</p>
                 <p>Venta de farmacias</p>
             </div>
+
+            
+
             <div class="footer__parrafo">
                 <p>  ®Todos los derechos reservados   </p>
             </div>         
@@ -150,8 +156,10 @@
 
 
 
-
-<script src="js/script"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 
 </body>
 </html>

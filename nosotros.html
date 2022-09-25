@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,22 +44,22 @@
     
 
    
-    <div class="contenedor">
+    <div class="contenedor wow animate__animated animate__fadeInLeft">
     <main>
         <h2  class="titulo--contactos  centrar-texto  ">Nosotros</h2>
          <div class="nosotros ">
 
-                <div class="nosotros--informacion  " >
-
-                <img src="assets/img/fotografiaDoctor.jpg" alt="">
+              
+                <img src="assets/img/consultorio.jpg" alt="">
                
                 
+                <div class="nosotros--informacion  ">
+                    <h3 class="centrar-texto">Quienes somos</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rem obcaecati magnam! Eius architecto, nihil itaque ipsa delectus dolorem vel, omnis maiores, quos consectetur culpa eligendi. Odit ipsam mollitia sint.
+                    </p>
                 </div>
 
-                <div class=" ">
-                    <h3 class="centrar-texto">Quienes somos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque enim expedita magnam saepe exercitationem dolores, ad nihil officiis neque placeat, ipsam velit omnis repudiandae iure quae similique eum! Minima, cum.</p>
-                </div>
         </div>
     </main>
 </div>
@@ -116,8 +118,10 @@
 
 
 
-
-<script src="js/script"></script>
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 
 </body>
 </html>
