@@ -51,16 +51,16 @@
                 
                 <img class="contactos__logo contactos__logo--login" src="assets/logo/logo.jpg" alt="">
                
-                <form action="">
+                <form action="ingresar.php" method="POST" autocomplete="off">
                     <div class="campo--login">
-                        <input class="campo__field campo__field--login icon-user" type="text" placeholder="Usuario"> 
+                        <input class="campo__field campo__field--login icon-user" type="text" placeholder="Usuario" name="usuario"> 
                     </div>
 
                     <div class="campo--login">
-                        <input class="campo__field campo__field--login  icon-pass"type="password" placeholder="Contraseña">
+                        <input class="campo__field campo__field--login  icon-pass"type="password" placeholder="Contraseña" name="pass">
                     </div>
                     <div class="campo--login">
-                        <input type="submit" value="iniciar" class="boton boton--login ">
+                        <input type="submit" class="boton boton--login" value="ingresar" name="btningresar">
 
                     </div>
                     <div class="enlace--crearCuenta">
